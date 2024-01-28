@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Anjum A Shaik</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#few-more-insights">Insights</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Anjum Afrooz Shaik</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#few-more-insights" onclick="toggleMenu()">Insights</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.jpg" alt="Anjum Shaik profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Anjum A Shaik</h1>
+        <p class="section__text__p2">Health Informatics Graduate Student at MTU</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2"
+            onclick="window.open('./assets/Anjum A Shaik .pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/profile-pic-2.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h1>Education</h1>
+              <p> <strong> Master of Science(M.S.) Health Informatics </strong> <br />(Expected garduation: December 2024) 
+                <br />Michigan Technological University, Houghton, MI, United States
+                <br />Current GPA: 4.0 </p>
+            
+
+              <p> <strong> Bachelor of science (B.Sc.) </strong><br /> Graduation: 2017 - 2021
+                <br />Agricultural College, Bapatla, AP, India
+                <br />GPA: 3.27 </p>
+            </div>
+            
+          </div>
+          <div class="text-container">
+        
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img
+                  src="./assets/hobbies.jpeg"
+                  alt="Hobbies icon"
+                  class="icon"
+                />
+                <h1>Hobbies</h1>
+                <p> Sudoku <br /> Drawing
+                  <br /> Watching Dramas </p>
+              
+              </div>
+              
+            </div>
+            <div class="text-container">
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2>Work Experience</h2>
+            <p> <strong> TEACHING ASSISTANT (PYTHON) </strong> <br />Michigan Technological University / Aug 2023 - Current 
+                <br />• Assisting in python programming to students enrolled in SAT 4650.
+                <br />• Conducting lab sessions and providing support for python-related questions. </p>
+            
+
+              <p> <strong>DATA ANALYST INTERN </strong><br /> Smile 4 All Dental Clinic, India / Oct 2021 - Jul 2022
+                <br />• Performed data and statistical analysis. 
+				<br />• Addressed patient concerns in an effective manner that instills confidence in organization.
+				<br />• Developed dashboards and data visualizations to represent complex data sets. </p>
+            </div>
+            
+          </div>
+          <div class="text-container">
+          
+          </div>
+          <div class="details-container">
+            <h2 >Skills</h2>
+            <div class="article-container">
+                <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <p ><strong>Python</strong>
+                      <br />Experienced</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <p><strong>Microsoft Excel</strong>
+                      <br/>Experienced</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <p><strong>Microsoft Powerpoint</strong>
+                      <br/>Experienced</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <p><strong>Tableau</strong>
+                      <br/>Intermediate</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <p><strong>HTML</strong>
+                      <br/>Intermediate</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <p><strong>Machine Learning</strong>
+                      <br/>Intermediate</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <p><strong>R Programming</strong>
+                      <br/>Basic</p>
+                    </div>
+                  </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            
+              <h2>Course Projects</h2>
+              <p> <strong> Stress Management Model </strong> (Spring 2023) 
+                <br />During my academic journey, I actively contributed to an innovative research endeavor focused on the development of a "Stress Management Model" utilizing real-time monitoring of user stress levels, heart rate, and its variability on mobile devices. This project not only honed my technical skills but also deepened my understanding of the critical intersection between technology and mental well-being</p>
+            
+
+              <p> <strong>Infant Immunization Reminder – Python </strong> (Spring 2023)
+				<br />I created Infant Immunization Reminder, using Python and tkinter GUI. This prompts users for their baby's age and email address, then sends an email reminder with the baby's vaccination schedule based on their age. This project reflects my Python programming skills and application development for healthcare purposes.</p>
+				
+			  <p> <strong>Empowering Clinical Decision-Making: Heart Disease Classification with Machine Learning </strong> (Fall 2023)
+				<br />I successfully completed this coursework project. This project involved thorough data exploration, implementation of machine learning models including Logistic Regression, Decision Tree, Random Forest, and Neural Network (MLP), and evaluation of their performance. I handled data preprocessing tasks such as missing value treatment and feature encoding, and effectively visualized results to draw actionable insights. This project demonstrates my proficiency in data analysis, machine learning, and healthcare applications, highlighting my ability to contribute to clinical decision-making processes.</p>
+				
+            </div>
+            
+          </div>
+          <div class="text-container">
+          </div>
+		  
+        <div class="about-containers">
+          <div class="details-container">
+            <h2>Research</h2>
+              <p> <strong> Volunteer Research in ICA Annotation with Labelme </strong> (Summer 2023) 
+                <br />My commitment to research extends beyond the classroom, as demonstrated by my volunteer involvement in annotating ICA datasets using the Labelme platform. This experience not only showcased my dedication to the research community but also allowed me to gain valuable insights into data annotation processes.</p>
+            
+
+              <p> <strong>Volunteer Research in Hip Fracture Prediction via DXA Imaging </strong> (Fall 2023)
+				<br />I recently completed a project focused on predicting hip fractures using Dual-energy X-ray Absorptiometry (DXA) imaging. Through the utilization of the U-Net architecture, the project successfully achieved accurate predictions. This experience reflects my commitment to advancing healthcare and staying updated on innovative medical imaging techniques.</p>
+				
+			  <p> <strong>Volunteer Research in Heart and Brain Connections : Phenotypic Insights </strong>(Spring 2024)
+				<br />I am currently delving into the intricate interplay between heart and brain traits. This endeavor seeks to unravel  nuanced phenotypic patterns, providing a comprehensive understanding of the connections that exist between these pivotal organs.</p>
+				
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#few-more-insights'"
+      />
+    </section>
+
+    <section id="few-more-insights">
+        <p class="section__text__p1">My</p>
+        <h1 class="title">VERSATILITY</h1>
+        <div class="few-more-insights-section-container">
+          <div class="section__pic-container">
+            <img
+              src="./assets/about-pic.jpg"
+              alt="Profile picture"
+              class="few-more-insights-pic-1"
+            />
+            <img
+              src="./assets/MT.jpg"
+              alt="Profile picture"
+              class="few-more-insights-pic-2"
+            />
+          </div>
+          <div class="few-more-insights-details-container">
+            <div class="few-more-insights-containers">
+              <div class="details-container">
+                <h1>POSTER PRESENTATION</h1>
+                <p> Presented a poster on hip fracture prediction at MTU, demonstrating a commitment to advancing healthcare solutions and engaging in innovative medical research. Effectively communicated research methodology, findings, and implications. Received valuable feedback from peers and faculty members, showcasing proficiency in visually presenting complex topics.</p>
+              
+  
+              </div>
+          
+            </div>
+            <div class="text-container">
+            </div>
+            
+            <div class="few-more-insights-details-container">
+              <div class="few-more-insights-containers">
+                <div class="details-container">
+    
+                  <h1>Extra-Curricular Activities</h1>
+                  <p> • Member of Mind Trekkers at MTU
+                    <br /> • Member of National Service Scheme in Bachelor’s </p>
+                
+                </div>
+                
+              </div>
+              <div class="text-container">
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        />
+      </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:anjumafrooz786@gmail.com">anjumafrooz786@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">www.linkedin.com/in/anjumafroozshaik2106</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#few-more-insights">Insights</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Anjum Shaik. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
